@@ -3,5 +3,6 @@ services:
     name: esnai-cloud-v4
     env: python
     buildCommand: ""
-    startCommand: gunicorn esnai_server:app
+    startCommand: "gunicorn esnai_server:app"
     plan: free
+    branch: main
