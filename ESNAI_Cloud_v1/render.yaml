@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: esnai-cloud-auto
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn esnai_server:app
-    plan: free
-    branch: main
