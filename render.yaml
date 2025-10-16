@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: esnai-cloud
+    name: esnai-cloud-v4
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python esnai_server.py"
+    buildCommand: ""
+    startCommand: gunicorn esnai_server:app
     plan: free
-    autoDeploy: true
